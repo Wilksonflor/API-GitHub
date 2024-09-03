@@ -1,50 +1,119 @@
-# React + TypeScript + Vite
+# GitHub API Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Wilksonflor/API-GitHub/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/Wilksonflor/API-GitHub/releases)
+[![GitHub issues](https://img.shields.io/github/issues/Wilksonflor/API-GitHub)](https://github.com/Wilksonflor/API-GitHub/issues)
 
-Currently, two official plugins are available:
+GitHub API Explorer é uma aplicação web interativa que permite aos usuários explorar dados da API do GitHub de forma amigável. Com essa ferramenta, é possível pesquisar usuários, visualizar seus repositórios, e acessar detalhes aprofundados sobre cada um deles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Índice
 
-## Expanding the ESLint configuration
+- [Visão Geral](#visão-geral)
+- [Demonstração](#demonstração)
+- [Recursos Principais](#recursos-principais)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Visão Geral
 
-- Configure the top-level `parserOptions` property like this:
+GitHub API Explorer foi criado para desenvolvedores e entusiastas que desejam explorar dados do GitHub de maneira prática e intuitiva. A aplicação oferece uma interface limpa e direta para acessar informações detalhadas de usuários e repositórios.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Demonstração
+
+Veja a aplicação em ação: <a href="https://githubapiprofiles.netlify.app/" target="_blank">GitHub API Explorer - Live Demo</a>
+
+
+*Imagens ou GIFs da aplicação em uso podem ser inseridos aqui para uma melhor visualização.*
+
+## Recursos Principais
+
+- **Pesquisa de Usuários**: Encontre usuários do GitHub pelo nome de usuário.
+- **Listagem de Repositórios**: Visualize todos os repositórios públicos de um usuário.
+- **Detalhes do Repositório**: Acesse informações como descrição, estrelas, forks, issues abertas, e mais.
+- **Interface Responsiva**: Compatível com dispositivos móveis e desktops.
+
+## Tecnologias Utilizadas
+
+- **React**: Biblioteca para criação de interfaces de usuário.
+- **TypeScript**: Linguagem que adiciona tipagem ao JavaScript.
+- **Vite**: Ferramenta de build rápida e eficiente.
+- **Axios**: Cliente HTTP para consumo de APIs.
+- **CSS Modules**: Modularização de estilos CSS para melhor manutenção.
+
+## Instalação
+
+Siga as etapas abaixo para configurar o ambiente localmente:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Wilksonflor/API-GitHub.git
+
+
+2. Acesse o diretório do projeto:
+```
+cd API-GitHub
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+3.Instale as dependências:
 ```
+npm install
+```
+Execute a aplicação:
+```
+npm run dev
+```
+Abra o navegador e acesse:
+```
+http://localhost:5173
+```
+
+## Como Usar
+1. Pesquisar Usuário: Digite o nome de usuário do GitHub na barra de pesquisa.
+2. Explorar Repositórios: Clique em um usuário nos resultados para ver seus repositórios.
+3. Detalhes do Repositório: Selecione um repositório para ver informações detalhadas.
+
+## Estrutura do projeto
+```
+API-GitHub/
+├── public/
+├── src/
+│   ├── components/   # Componentes reutilizáveis
+│   ├── pages/        # Páginas principais da aplicação
+│   ├── services/     # Configurações e chamadas de API
+│   ├── styles/       # Arquivos de estilo
+│   └── utils/        # Funções auxiliares e constantes
+├── .gitignore
+├── package.json
+└── README.md
+```
+# Contribuição
+Contribuições são extremamente bem-vindas! Para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch com sua feature ou correção;
+```
+git checkout -b feature/nova-feature
+```
+3. Faça o commit de suas alterações
+```
+git commit -m 'Adiciona nova feature'
+```
+4.Envie para o branch principal:
+```
+git push origin feature/nova-feature
+```
+5. Abra um Pull Request.
+
+# Licença
+Este projeto está licenciado sob a MIT License.
+
+# Contato
+Desenvolvido por Wilkson Flor  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue)](https://www.linkedin.com/in/wilksonsoares/)  
+wilksonflor12@gmail.com
+
