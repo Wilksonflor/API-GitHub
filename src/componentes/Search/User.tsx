@@ -23,11 +23,11 @@ export const User = ({
 
       <div className={styled.stats}>
         <div>
-          <p>Seguidores:</p>
+          <p>Seguidores</p>
           <p className={styled.number}>{followers}</p>
         </div>
         <div>
-          <p>Seguindo:</p>
+          <p>Seguindo</p>
           <p className={styled.number}>{following}</p>
         </div>
       </div>
