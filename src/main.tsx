@@ -1,9 +1,8 @@
-// index.tsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
-import { Home } from "./routes/Home.tsx";
+import { Home } from "./pages/Home.tsx";
 import "./index.css";
 
 // Configuração das rotas

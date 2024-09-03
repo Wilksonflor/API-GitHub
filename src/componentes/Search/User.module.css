@@ -35,6 +35,7 @@
 
 .stats {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .stats div {
@@ -67,4 +68,18 @@
 
 .user a:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 360px) {
+  .stats {
+    justify-content: center;
+    gap: 10px;
+  }
+  .stats div:first-child {
+    border: none;
+  }
+
+  .user a {
+    width: 100%;
+  }
 }
