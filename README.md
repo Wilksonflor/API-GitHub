@@ -25,7 +25,8 @@ GitHub API Explorer foi criado para desenvolvedores e entusiastas que desejam ex
 
 ## Demonstração
 
-Veja a aplicação em ação: [GitHub API Explorer - Live Demo](https://githubapiprofiles.netlify.app/){:target="_blank"}
+Veja a aplicação em ação: <a href="https://githubapiprofiles.netlify.app/" target="_blank">GitHub API Explorer - Live Demo</a>
+
 
 *Imagens ou GIFs da aplicação em uso podem ser inseridos aqui para uma melhor visualização.*
 
