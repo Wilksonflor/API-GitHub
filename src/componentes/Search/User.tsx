@@ -1,19 +1,29 @@
 import { userProps } from "../../types/user";
 import { MdLocationPin } from "react-icons/md";
+import { FaGithub, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "./User.module.css";
 export const User = ({
+  name,
   login,
   avatar_url,
   followers,
   following,
   location,
-  repos,
+  repos_url,
 }: userProps) => {
   return (
     <div className={styled.user}>
       <img src={avatar_url} alt={login} />
-      <h2>{login}</h2>
+      <div className={styled.userName}>
+        <FaGithub />
+        <h2>{login}</h2>
+      </div>
+      <h3>
+        <FaUser />
+        {name}
+      </h3>
+
       {location && (
         <p className={styled.location}>
           <MdLocationPin />

@@ -17,6 +17,15 @@
   object-fit: cover;
 }
 
+.userName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.userName svg {
+  font-size: 1.5rem;
+}
 .location {
   display: flex;
   align-items: center;

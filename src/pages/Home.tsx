@@ -20,15 +20,18 @@ export const Home = () => {
       setError(true);
       return;
     }
-    const { avatar_url, login, location, followers, following } = data;
+    const { avatar_url, login, location, followers, following, name, bio } =
+      data;
 
     // orientado ao tipo
     const userData: userProps = {
+      name,
       avatar_url,
       login,
       location,
       followers,
       following,
+      bio,
     };
 
     setUser(userData);
